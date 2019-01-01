@@ -5,76 +5,60 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
-		<meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
+		<meta name="author" content="itdeer(itdeer.cn@gmail.com)">
 
-		<title>Right Sidebar | Initio - Free, multipurpose html5 template by GetTemplate</title>
+		<title>Itdeer Blog</title>
 
-		<link rel="shortcut icon" href="static/images/gt_favicon.png">
+		<link rel="shortcut icon" href="static/images/logo.ico">
+		<link rel="stylesheet" href="static/css/index.css" />
+		<link rel="stylesheet" href="static/css/bootstrap.no-icons.min.css" />
 
-		<!-- Bootstrap -->
-		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
-		<!-- Icon font -->
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<!-- Fonts -->
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
-		<!-- Custom styles -->
-		<link rel="stylesheet" href="static/css/styles.css">
-
-		<!--[if lt IE 9]> <script src="static/js/html5shiv.js"></script> <![endif]-->
 	</head>
 
 	<body>
 
-		<header id="header">
-			<div id="head" class="parallax" parallax-speed="1">
-				<h1 id="logo" class="text-center">
-			<img class="img-circle" src="static/images/guy.jpg" alt="">
-			<span class="title">Anthony Russel's Blog</span>
-			<span class="tagline">A creative man is motivated by the desire to achieve, not by the desire to beat others.</span>
-		</h1>
+		<!-- head 头部 -->
+		<header>
+			<!-- head 头部 logo -->
+			<div id="head">
+				<h1>
+					<span class="title"><img class="img-circle" src="static/images/head_logo.png" alt="">Itdeer's Blog</span>
+				</h1>
 			</div>
 
-			<nav class="navbar navbar-default navbar-sticky">
-				<div class="container-fluid">
-
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-					</div>
-
-					<div class="navbar-collapse collapse">
-
-						<ul class="nav navbar-nav">
-							<li>
-								<a href="home.html">主页</a>
-							</li>
-							<li>
-								<a href="archives.html">归档</a>
-							</li>
-							<li>
-								<a href="about.html">关于</a>
-							</li>
-							<li>
-								<a href="history.html">历史</a>
-							</li>
-						</ul>
-
-					</div>
-					<!--/.nav-collapse -->
+			<!-- header 头部 导航 -->
+			<nav class="navbar navbar-default">
+				<div class="navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="archives.html">归档</a>
+						</li>
+						<li>
+							<a href="archives.html">分类</a>
+						</li>
+						<li>
+							<a href="archives.html">标签</a>
+						</li>
+						<li>
+							<a href="history.html">历史</a>
+						</li>
+						<li>
+							<a href="about.html">关于</a>
+						</li>
+					</ul>
 				</div>
 			</nav>
 		</header>
 
-		<main id="main">
-
+		<main>
 			<div class="container">
-
 				<div class="row topspace">
-
-					<!-- Article main content -->
-					
-					<article class="col-sm-8 maincontent">
-						<header class="entry-header">
-							<h1><a href="single.html" rel="bookmark">2016</a></h1>
+					<article class="col-md-8 maincontent">
+						<header class="entry-year">
+							<h1><a href="archive.html">2016</a></h1>
 						</header>
 						<div class="entry-content">
 							<ul>
@@ -141,108 +125,90 @@
 
 					<!-- Sidebar -->
 					<aside class="col-md-4 sidebar sidebar-left">
-
-						<div class="widget">
-							<h4>Lorem ipsum dolor sit</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, ratione delectus reiciendis nulla nisi pariatur molestias animi eos repellat? Vel.</p>
+						<div>
+							<div class="sidebar-span"><span>最新文章</span></div>
+							<div class="sidebar-list">
+								<li><span class="glyphicon glyphicon-tint"><a href="#" title="ElasticSearch是一个基于Lucene的构建的开源的，分布式的，RESTful接口全文搜索引擎">ElasticSearch是一个基于Lucene的构建的开源的，分布式的，RESTful接口全文搜索引擎</a></span></li>
+								<li><span class="glyphicon glyphicon-tint"><a href="#" title="Qui esse impedit vitae repellat.">Qui esse impedit vitae repellat.</a></span></li>
+							</div>
 						</div>
-						<div class="widget">
-							<h4>Lorem ipsum dolor sit</h4>
-							<ul>
-								<li>
-									<a href="">Lorem ipsum </a>dolor sit amet.</li>
-								<li>Nostrum, dolores labore tempore error.</li>
-								<li>Qui esse impedit vitae repellat.</li>
-								<li>Aliquam, laborum corporis molestiae nihil.</li>
-								<li>Voluptate, labore non adipisci nihil!</li>
-							</ul>
+						<div>
+							<div class="sidebar-span"><span>所有分类<span></div>
+							<div class="sidebar-list">
+								<li><span class="glyphicon glyphicon-move"><a href="">Lorem ipsum dolor sit amet.</a></span></li>
+								<li><span class="glyphicon glyphicon-move"><a href="">Nostrum, dolores labore tempore error.</a></span></li>
+								<li><span class="glyphicon glyphicon-move"><a href="">Qui esse impedit vitae repellat.</a></span></li>
+								<li><span class="glyphicon glyphicon-move"><a href="">Aliquam, laborum corporis molestiae nihil.</a></span></li>
+								<li><span class="glyphicon glyphicon-move"><a href="">Voluptate, labore non adipisci nihil!</a></span></li>
+							</div>
 						</div>
-
+						<div>
+							<div class="sidebar-span"><span>所有标签</span></div>
+							<div class="sidebar-list">
+								<div class="tagcloud">
+									<a href="#">文献综述</a>
+									<a href="#">对外投资</a>
+									<a href="#">机器人</a>
+									<a href="#">区块链</a>
+									<a href="#">科技创新</a>
+									<a href="#">计算机科学</a>
+									<a href="#">自动驾驶</a>
+									<a href="#">研究价值</a>
+									<a href="#">模式识别</a>
+									<a href="#">自然语言处理</a>
+								</div>
+							</div>
+						</div>
 					</aside>
 					<!-- /Sidebar -->
-
 				</div>
 			</div>
 			<!-- /container -->
-
 		</main>
 
-		<footer id="footer" class="topspace">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 widget">
-						<h3 class="widget-title">Contact</h3>
-						<div class="widget-body">
-							<p>+234 23 9873237<br>
-								<a href="mailto:#">some.email@somewhere.com</a><br>
-								<br> 234 Hidden Pond Road, Ashland City, TN 37015
-							</p>
-						</div>
-					</div>
-
-					<div class="col-md-3 widget">
-						<h3 class="widget-title">Follow me</h3>
-						<div class="widget-body">
-							<p class="follow-me-icons">
-								<a href=""><i class="fa fa-twitter fa-2"></i></a>
-								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
-								<a href=""><i class="fa fa-github fa-2"></i></a>
-								<a href=""><i class="fa fa-facebook fa-2"></i></a>
-							</p>
-						</div>
-					</div>
-
-					<div class="col-md-3 widget">
-						<h3 class="widget-title">Text widget</h3>
-						<div class="widget-body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
-						</div>
-					</div>
-
-					<div class="col-md-3 widget">
-						<h3 class="widget-title">Form widget</h3>
-						<div class="widget-body">
-							<p>+234 23 9873237<br>
-								<a href="mailto:#">some.email@somewhere.com</a><br>
-								<br> 234 Hidden Pond Road, Ashland City, TN 37015
-							</p>
-						</div>
-					</div>
-
-				</div>
-				<!-- /row of widgets -->
-			</div>
-		</footer>
-
+		<!-- footer 底部 -->
 		<footer id="underfooter">
+			<!-- footer 底部  正文 -->
 			<div class="container">
 				<div class="row">
-
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p>234 Hidden Pond Road, Ashland City, TN 37015 </p>
-						</div>
+					<div class="col-md-6">
+						<p>版权所有 &nbsp; 保留一切权利</p>
 					</div>
-
 					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="text-right">
-								Copyright &copy; 2014, Your awesome name here<br> Design:
-								<a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a>
-							</p>
-						</div>
+						<p class="text-right">
+							Copyright &copy; 2016-2020 &nbsp; 京ICP备18002841号
+						</p>
 					</div>
-
 				</div>
-				<!-- /row of widgets -->
 			</div>
+
 		</footer>
 
-		<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-		<script src="static/js/template.js"></script>
+
+		<!-- footer 底部  直达顶部 -->
+		<div style="display: none;" id="rocket-to-top">
+			<div style="opacity:0;display: block;" class="level-2"></div>
+			<div class="level-3"></div>
+		</div>
+
+		<!-- JavaScript 依赖引用 -->
+		<script type="text/javascript" src="static/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="static/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="static/js/toup.js"></script>
+		<script type="text/javascript" src="static/js/tagcloud.js"></script>
+		
+		<script type="text/javascript">
+			/*3D标签云*/
+			tagcloud({
+				selector: ".tagcloud",
+				fontsize: 12,
+				radius: 60,
+				mspeed: "normal",
+				ispeed: "normal",
+				direction: 135,
+				keep: false
+			});
+		</script>
 	</body>
 
 </html>
