@@ -25,7 +25,7 @@
 					<span class="title"><img class="img-circle" src="static/images/head_logo.png" alt="">Itdeer's Blog</span>
 				</h1>
 			</div>
-
+			
 			<!-- header 头部 导航 -->
 			<nav class="navbar navbar-default">
 				<div class="navbar-collapse">
@@ -43,9 +43,6 @@
 							<a href="archives.html">标签</a>
 						</li>
 						<li>
-							<a href="history.html">历史</a>
-						</li>
-						<li>
 							<a href="about.html">关于</a>
 						</li>
 					</ul>
@@ -54,15 +51,15 @@
 		</header>
 
 		<!-- main 正文 -->
-		<main>
+		<main class="mainbody">
 			<div class="container">
 				<div class="row topspace">
 					<!-- 正文 Article -->
-					<div class="col-md-8">
+					<div class="col-md-8 col-md-offset-2">
 						<article>
 							<header class="entry-header">
 								<h1 class="entry-title">
-									<a href="single.html" class="nav-underline">Centos7.4安装Greenplum的RPM包</a>
+									<a href="single.html" class="nav-underline">接口全文搜索引擎还可以把她理解为分布式的文档数据</a>
 								</h1>
 								<div class="entry-meta">
 									<span class="glyphicon glyphicon-time"></span>
@@ -181,48 +178,9 @@
 
 					</div>
 					<!-- /Article -->
-
-					<!-- Sidebar -->
-					<aside class="col-md-4 sidebar sidebar-left">
-						<div>
-							<div class="sidebar-span"><span>最新文章</span></div>
-							<div class="sidebar-list">
-								<li><span class="glyphicon glyphicon-tint"><a href="#" title="ElasticSearch是一个基于Lucene的构建的开源的，分布式的，RESTful接口全文搜索引擎">ElasticSearch是一个基于Lucene的构建的开源的，分布式的，RESTful接口全文搜索引擎</a></span></li>
-								<li><span class="glyphicon glyphicon-tint"><a href="#" title="Qui esse impedit vitae repellat.">Qui esse impedit vitae repellat.</a></span></li>
-							</div>
-						</div>
-						<div>
-							<div class="sidebar-span"><span>所有分类<span></div>
-							<div class="sidebar-list">
-								<li><span class="glyphicon glyphicon-move"><a href="">Lorem ipsum dolor sit amet.</a></span></li>
-								<li><span class="glyphicon glyphicon-move"><a href="">Nostrum, dolores labore tempore error.</a></span></li>
-								<li><span class="glyphicon glyphicon-move"><a href="">Qui esse impedit vitae repellat.</a></span></li>
-								<li><span class="glyphicon glyphicon-move"><a href="">Aliquam, laborum corporis molestiae nihil.</a></span></li>
-								<li><span class="glyphicon glyphicon-move"><a href="">Voluptate, labore non adipisci nihil!</a></span></li>
-							</div>
-						</div>
-						<div>
-							<div class="sidebar-span"><span>所有标签</span></div>
-							<div class="sidebar-list">
-								<div class="tagcloud">
-									<a href="#">文献综述</a>
-									<a href="#">对外投资</a>
-									<a href="#">机器人</a>
-									<a href="#">区块链</a>
-									<a href="#">科技创新</a>
-									<a href="#">计算机科学</a>
-									<a href="#">自动驾驶</a>
-									<a href="#">研究价值</a>
-									<a href="#">模式识别</a>
-									<a href="#">自然语言处理</a>
-								</div>
-							</div>
-						</div>
-					</aside>
-					<!-- /Sidebar -->
 				</div>
-				<center class="">
-					<ul class="pagination">
+				<center class="mainpage">
+					<ul class="pagination pagination-lg">
 						<li class="disabled">
 							<a href="">&laquo;</a>
 						</li>
@@ -254,21 +212,11 @@
 		</main>
 
 		<!-- footer 底部 -->
-		<footer id="underfooter">
-			<!-- footer 底部  正文 -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<p>版权所有 &nbsp; 保留一切权利</p>
-					</div>
-					<div class="col-md-6 widget">
-						<p class="text-right">
-							Copyright &copy; 2016-2020 &nbsp; 京ICP备18002841号
-						</p>
-					</div>
-				</div>
-			</div>
-
+		<footer class="underfooter">
+			<p>
+				<span>版权所有 &nbsp; 保留一切权利</span>
+				<span>Copyright &copy; 2016-2020 &nbsp; 京ICP备18002841号</span>
+			</p>
 		</footer>
 
 		<!-- footer 底部  直达顶部 -->
@@ -278,22 +226,19 @@
 		</div>
 
 		<!-- JavaScript 依赖引用 -->
-		<script type="text/javascript" src="static/js/jquery.min.js" ></script>
-		<script type="text/javascript" src="static/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="static/js/toup.js"></script>
-		<script type="text/javascript" src="static/js/tagcloud.js"></script>
+		<script>
+			
+	$(window).scroll(function() {
+		if($(".navbar").offset().top > 150) {
+			$(".navbar-default").addClass("navbar-fixed-top");
+		} else {
+			$(".navbar-fixed-top").removeClass("navbar-fixed-top");
+		}
+	})
 
-		<script type="text/javascript">
-			/*3D标签云*/
-			tagcloud({
-				selector: ".tagcloud",
-				fontsize: 12,
-				radius: 60,
-				mspeed: "normal",
-				ispeed: "normal",
-				direction: 135,
-				keep: false
-			});
 		</script>
 	</body>
 
