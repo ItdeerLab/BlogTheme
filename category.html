@@ -10,8 +10,9 @@
 		<title>Itdeer Blog</title>
 
 		<link rel="shortcut icon" href="static/images/logo.ico">
-		<link rel="stylesheet" href="static/css/index.css" />
-		<link rel="stylesheet" href="static/css/bootstrap.no-icons.min.css" />
+
+		<link rel="stylesheet" href="static/css/bootstrap.css" />
+		<link rel="stylesheet" href="static/css/style.css" />
 
 	</head>
 
@@ -21,91 +22,83 @@
 		<header>
 			<!-- head 头部 logo -->
 			<div id="head">
-				<h1>
-					<span class="title"><img class="img-circle" src="static/images/head_logo.png" alt="">Itdeer's Blog</span>
-				</h1>
+				<div class="container ">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<span class="title"><img class="img-circle" src="static/images/head_logo.png" alt="">Itdeer's Blog</span>
+						</div>
+					</div>
+
+				</div>
 			</div>
 
 			<!-- header 头部 导航 -->
-			<nav class="navbar navbar-default">
-				<div class="navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="index.html">首页</a>
-						</li>
-						<li>
-							<a href="archives.html">归档</a>
-						</li>
-						<li>
-							<a href="category.html">分类</a>
-						</li>
-						<li>
-							<a href="tag.html">标签</a>
-						</li>
-						<li>
-							<a href="history.html">历史</a>
-						</li>
-						<li>
-							<a href="about.html">关于</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+			<div class="header-navbar">
+				<nav class="navbar navbar-default">
+					<div class="navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="archives.html">归档</a>
+							</li>
+							<li>
+								<a href="category.html">分类</a>
+							</li>
+							<li>
+								<a href="tags.html">标签</a>
+							</li>
+							<li>
+								<a href="about.html">关于</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</header>
 
-		<main id="main">
-
+		<!-- main 正文 -->
+		<main class="mainbody">
 			<div class="container">
-
 				<div class="row topspace">
-
-					<!-- Article main content -->
-					<article class="col-md-9 col-md-offset-2 maincontent">
-						<header class="entry-header">
-							<h1 class="entry-title">
+					<!-- 正文 Article -->
+					<div class="col-md-8 col-md-offset-2">
+						<article>
+							<header class="entry-header">
+								<h1 class="entry-title">
 									<a href="single.html" class="nav-underline">Centos7.4安装Greenplum的RPM包</a>
-							</h1>
-							<div class="entry-meta">
-								<span class="glyphicon glyphicon-time"></span>
-								<span>2013-09-27</span> |
-								<span class="glyphicon glyphicon-tags"></span>
-								<span><a href="#">数据仓库</a></span> |
-								<span class="glyphicon glyphicon-eye-open"></span>
-								<span>100</span>
+								</h1>
+								<div class="entry-meta">
+									<span class="glyphicon glyphicon-time"></span>
+									<span>2013-09-27</span> |
+									<span class="glyphicon glyphicon-tags"></span>
+									<span><a href="#">数据仓库</a></span> |
+									<span class="glyphicon glyphicon-eye-open"></span>
+									<span>100</span>
+								</div>
+							</header>
+							<div class="entry-content">
+								<p><img alt="" src="static/images/mac.jpg"></p>
+								<p>
+								</p>
 							</div>
-						</header>
-						<div class="entry-content">
-							<p><img alt="" src="static/images/mac.jpg"></p>
-							<p>
-								
-								
-								
-							</p>
-						</div>
-					</article>
-					<!-- /Article -->
+						</article>
+						
+						
+						<!-- /Article -->
+					</div>
 				</div>
 			</div>
 			<!-- /container -->
-
 		</main>
 
 		<!-- footer 底部 -->
-		<footer id="underfooter">
-			<!-- footer 底部  正文 -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<p>版权所有 &nbsp; 保留一切权利</p>
-					</div>
-					<div class="col-md-6 widget">
-						<p class="text-right">
-							Copyright &copy; 2016-2020 &nbsp; 京ICP备18002841号
-						</p>
-					</div>
-				</div>
-			</div>
-
+		<footer class="underfooter">
+			<p>
+				<span>版权所有 &nbsp; 保留一切权利</span>
+				<span>Copyright &copy; 2016-2020 &nbsp; 京ICP备18002841号</span>
+			</p>
 		</footer>
 
 		<!-- footer 底部  直达顶部 -->
@@ -115,23 +108,9 @@
 		</div>
 
 		<!-- JavaScript 依赖引用 -->
-		<script type="text/javascript" src="static/js/jquery.min.js" ></script>
-		<script type="text/javascript" src="static/js/bootstrap.min.js" ></script>
-		<script type="text/javascript" src="static/js/toup.js"></script>
-		<script type="text/javascript" src="static/js/tagcloud.js"></script>
-
-		<script type="text/javascript">
-			/*3D标签云*/
-			tagcloud({
-				selector: ".tagcloud",
-				fontsize: 12,
-				radius: 60,
-				mspeed: "normal",
-				ispeed: "normal",
-				direction: 135,
-				keep: false
-			});
-		</script>
+		<script type="text/javascript" src="static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="static/js/style.js"></script>
 	</body>
 
 </html>

@@ -1,3 +1,4 @@
+//直达顶部小火箭
 $(function() {
 	var e = $("#rocket-to-top"),
 		t = $(document).scrollTop(),
@@ -59,4 +60,31 @@ $(function() {
 					scrollTop: 0
 				}, "slow");
 		});
+});
+
+//导航到达顶部固定
+$(document).ready(function() {
+	var navOffset = $(".header-navbar").offset().top;
+	$(window).scroll(function() {
+		var scrollPos = $(window).scrollTop();
+		if(scrollPos >= navOffset) {
+			$(".header-navbar").addClass("header-fixed");
+		} else {
+			$(".header-navbar").removeClass("header-fixed");
+		}
+	});
+});
+
+//固定footer到底部
+$(function() {
+	function footerPosition() {
+		$("footer").removeClass("fixed-bottom");
+		var contentHeight = document.body.scrollHeight,
+			winHeight = window.innerHeight;
+		if(!(contentHeight > winHeight)) {
+			$("footer").addClass("fixed-bottom");
+		}
+	}
+	footerPosition();
+	$(window).resize(footerPosition);
 });
