@@ -69,8 +69,10 @@ $(document).ready(function() {
 		var scrollPos = $(window).scrollTop();
 		if(scrollPos >= navOffset) {
 			$(".header-navbar").addClass("header-fixed");
+			$("footer").addClass("footer");
 		} else {
 			$(".header-navbar").removeClass("header-fixed");
+			$("footer").removeClass("footer");
 		}
 	});
 });

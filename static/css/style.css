@@ -101,6 +101,10 @@ html a {
 	background-color: #F1F1F1;
 }
 
+.nav-active {
+	background-color: #F1F1F1;
+}
+
 
 /*********************************************************************
                             Main-OK
@@ -179,6 +183,10 @@ html a {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+.footer {
+	margin-top: 150px;
 }
 
 
@@ -424,4 +432,107 @@ html a {
 
 .content article section .brief {
 	color: #9f9f9f;
+}
+
+
+/*********************************************************************
+                            Category list
+**********************************************************************/
+
+.category-title {
+	width: 100%;
+	height: auto;
+	font-size: 18px;
+	margin-top: 30px;
+	color: #5E5E5E;
+}
+
+.category-list {
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	display: block;
+}
+
+.category-list a {
+	display: inline-block;
+	margin: 10px;
+	text-decoration: underline;
+}
+
+.category-list a:hover {
+	color: #000000;
+}
+
+
+/*********************************************************************
+                            Tags list
+**********************************************************************/
+
+.tags-title {
+	width: 100%;
+	height: auto;
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+.tags-list {
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	display: block;
+}
+
+.tags-list a {
+	display: inline-block;
+	margin: 10px;
+	text-decoration: underline;
+}
+
+.tag-size-0 {
+	color: #888;
+	font-size: 12px;
+	font-weight: 200;
+}
+
+.tag-size-1 {
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.tag-size-2 {
+	color: #666;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.tag-size-3 {
+	color: #555;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.tag-size-4 {
+	color: #444;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.tag-size-5 {
+	color: #333;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.tag-size-6 {
+	color: #222;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.tag-size-7 {
+	color: #111;
+	font-size: 26px;
+	font-weight: 900;
 }
